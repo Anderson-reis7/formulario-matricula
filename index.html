@@ -22,6 +22,39 @@
           <h1>Formulario de Matricula</h1>
           <p>Preencha os dados abaixo para matricular seu filho na escola de
             educação infantil Estrelas do Amanhã.</p>
+          <form enctype="multipart/form-data" method="POST">
+            <fieldset class="child-inf">
+              <legend>Informações do Aluno</legend>
+              <div class="input-wrapper">
+                <label for"fullname">Nome completo</label>
+                <input id="fullname" type="text"
+                  placeholder="Nome completo do aluno" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="birth">Data de nascimento</label>
+                <input id="birth" type="date">
+              </div>
+              <div id="select-wrapper">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender">
+                  <option value="male">Masculino</option>
+                  <option value="female">Feminino</option>
+                </select>
+              </div>
+              <div id="testarea-wrapper">
+                <label for="medical-info">Informações Medicas</label>
+                <textarea name="medical-info" id="medical-info" cols="30"
+                  rows="10" placeholder="Descreva aqui as informações medicas do aluno"></textarea>
+                </textarea>
+              </div>
+              <div id="droparea-wrapper">
+                <label for="file">Certidão de Nascimento</label>
+                <input type="file" id="file" name="file" accept=".pdf, .jpg, .png">
+                <img src="./assets/cloud-upload.svg" alt="">
+                <p>Clique aqui para <br> selecionar os arquivos</p>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
       <aside>
@@ -32,7 +65,8 @@
             <p>Inscreva seu filho em nossa escola e veja-o florescer em um
               ambiente acolhedor, seguro e estimulante.</p>
           </header>
-          <img src="./assets/Illustration.svg" alt="ilustração de crianças estudando">
+          <img src="./assets/Illustration.svg"
+            alt="ilustração de crianças estudando">
         </div>
       </aside>
     </div>
